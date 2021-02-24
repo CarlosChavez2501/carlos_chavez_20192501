@@ -20,26 +20,21 @@
     <label for="votos"></label>
     <input type="text" id="votos" name="votos" placeholder="insertar votos...">
 
-    <button type="button" onclick="processform()">send</button><br>
+    <button type="button" onclick="agregarFila()">send</button><br>
     <button type="button" onclick="ganador()">Ganador</button><br>
+    <div id="result">El partido ganador es...</div><br>
 
-    <table id="tabla">
+    <table id="tablaprueba">
         <tr>
             <td><strong>Nombre</strong></td>
             <td><strong>orientacion</strong></td>
             <td><strong>Cantidad</strong></td>
             <td><strong>Estado</strong></td>
         </tr>
-
-        <tr>
-            <td>ELefante</td>
-            <td>Derecha</td>
-            <td>20</td>
-            <td> </td>
-        </tr>
-
-        <div id="result"></div>
     </table>
+
+
+
     <script src="script.js"></script>
 </body>
 

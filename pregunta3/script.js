@@ -1,8 +1,4 @@
-function writeArrayToSessionStorage(keyName, arrayObject) {
-    sessionStorage.setItem(keyName, JSON.stringify(arrayObject))
-}
-
-function processform() {
+function agregarFila() {
     var reg_nombre = document.getElementById("nombre").value;
     var reg_orientacion = document.getElementById("orientacion").value;
     var reg_votos = document.getElementById("votos").value;
@@ -18,22 +14,11 @@ function processform() {
         }
     }
 
-    var PartidoArray = []
-    var nuevoPartido = {
-        "nombre": reg_nombre,
-        "orientacion": reg_orientacion,
-        "votos": reg_votos,
-        "estado": reg_estado
-    }
-
-    PartidoArray.push(nuevoPartido)
-    writeArrayToSessionStorage("PartidoArray", loginArray)
-}
-
-function tabla() {
-
+    document.getElementById("tablaprueba").insertRow(-1).innerHTML = '<tr><td>' + reg_nombre +
+        '</td><td>' + reg_orientacion +
+        '</td><td>' + reg_votos +
+        '</td><td>' + reg_estado + '</td></tr>';
 
 }
-
 
 
