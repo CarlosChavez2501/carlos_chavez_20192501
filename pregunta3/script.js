@@ -21,4 +21,8 @@ function agregarFila() {
 
 }
 
+function ganador() {
+    document.getElementById("tablaprueba").tablesorter()
+}
+
 
