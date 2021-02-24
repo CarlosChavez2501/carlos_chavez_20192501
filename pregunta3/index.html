@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3</title>
+</head>
+
+<body>
+    <h1>Vota por tu selva</h1>
+    <br>
+    <p>LLena el siguiente formulario a continuacion para ser patriota a Sivar Selva</p><br>
+
+    <label for="nombre"></label>
+    <input type="text" id="nombre" name="nombre" placeholder="inserta nombre..."><br>
+    <label for="orientacion"></label>
+    <input type="text" id="orientacion" name="orientacion" placeholder="inserta orientacion"><br>
+    <label for="votos"></label>
+    <input type="text" id="votos" name="votos" placeholder="insertar votos...">
+
+    <button type="button" onclick="processform()">send</button><br>
+    <button type="button" onclick="ganador()">Ganador</button><br>
+
+    <table id="tabla">
+        <tr>
+            <td><strong>Nombre</strong></td>
+            <td><strong>orientacion</strong></td>
+            <td><strong>Cantidad</strong></td>
+            <td><strong>Estado</strong></td>
+        </tr>
+
+        <tr>
+            <td>ELefante</td>
+            <td>Derecha</td>
+            <td>20</td>
+            <td> </td>
+        </tr>
+
+        <div id="result"></div>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
